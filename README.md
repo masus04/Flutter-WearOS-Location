@@ -5,7 +5,14 @@ Test Project for Flutter location on WearOS & Android Mobile
 Steps to reproduce:
 
 * Start project on either a wearOs Watch type or android mobile device
-* Progress indicator & loading message might appear -> hot restart
+
+Expected Behaviour behaviour:
+* Central widget shows speed & heading while speed is logged to console
+* This is the case when running the app on a mobile phone
+
+WearOS error behaviour:
+* The following error message is shown: `The location service on the device is disabled.`
+* The stacktrace is logged to console
 
 ## Mobile console log:
 
