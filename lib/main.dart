@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:flutter_wearos_location/flutterlocation_widget.dart';
 import "package:flutter_wearos_location/geolocator_widget.dart";
 import "package:hooks_riverpod/hooks_riverpod.dart";
 
@@ -29,15 +30,23 @@ class FlutterWearOSLocation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Card(
+    return Card(
       color: Colors.white,
       child: Center(
         child: Card(
           elevation: 4,
           color: Colors.white,
           child: Padding(
-            padding: EdgeInsets.all(16),
-            child: GeolocatorWidget(),
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: const [
+                GeolocatorWidget(),
+                Divider(thickness: 2),
+                FlutterLocationWidget(),
+              ],
+            ),
           ),
         ),
       ),

@@ -5,6 +5,7 @@ import "package:hooks_riverpod/hooks_riverpod.dart";
 final geolocatorProvider = StreamProvider<Position>((ref) async* {
   debugPrint("Initializing GeoLocator");
 
+  // Check Permissions
   var permission = await Geolocator.checkPermission();
   if (permission == LocationPermission.denied) {
     permission = await Geolocator.requestPermission();
@@ -13,6 +14,7 @@ final geolocatorProvider = StreamProvider<Position>((ref) async* {
     }
   }
 
+  // Stream Position
   await for (final position in Geolocator.getPositionStream().asBroadcastStream()) {
     debugPrint("Current Speed: ${position.speed} m/s");
     yield position;
