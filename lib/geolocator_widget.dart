@@ -20,9 +20,9 @@ class GeolocatorWidget extends HookConsumerWidget {
           debugPrintStack(stackTrace: stackTrace);
           return Text(error.toString());
         },
-        loading: () => Column(
+        loading: () => const Column(
           mainAxisSize: MainAxisSize.min,
-          children: const [
+          children: [
             CircularProgressIndicator(),
             SizedBox(height: 8),
             Text("Initializing Geolocator"),
