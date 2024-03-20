@@ -1,6 +1,15 @@
 import "package:flutter/material.dart";
 import "package:flutter_wearos_location/geolocator_widget.dart";
+import "package:flutter_wearos_location/location_widget.dart";
 import "package:hooks_riverpod/hooks_riverpod.dart";
+
+enum Route {
+  mainMenu,
+  geoLocator,
+  location;
+
+  String get route => "/$this";
+}
 
 void main() {
   runApp(const MyApp());
@@ -14,12 +23,57 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ProviderScope(
       child: MaterialApp(
-        title: "Flutter Demo",
+        title: "WearOS Location Demo",
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.indigo,
+          brightness: Brightness.dark,
         ),
-        home: const FlutterWearOSLocation(),
+        initialRoute: Route.mainMenu.route,
+        routes: {
+          Route.mainMenu.route: (BuildContext context) => const MainMenu(),
+          Route.geoLocator.route: (BuildContext context) => const GeolocatorWidget(),
+          Route.location.route: (BuildContext context) => const LocationWidget(),
+        },
       ),
+    );
+  }
+}
+
+class MainMenu extends StatelessWidget {
+  const MainMenu({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Material(
+      child: Column(
+        children: [
+          PackageButton(
+            text: "Geolocator",
+            route: Route.geoLocator,
+          ),
+          PackageButton(
+            text: "Location",
+            route: Route.location,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class PackageButton extends StatelessWidget {
+  final String text;
+  final Route route;
+
+  const PackageButton({super.key, required this.text, required this.route});
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton(
+      onPressed: () {
+        Navigator.of(context).pushNamed(route.route);
+      },
+      child: Text(text),
     );
   }
 }
