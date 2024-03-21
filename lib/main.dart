@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: "WearOS Location Demo",
         theme: ThemeData(
-          primarySwatch: Colors.indigo,
+          primarySwatch: Colors.blue,
           brightness: Brightness.dark,
         ),
         initialRoute: Route.mainMenu.route,
@@ -46,6 +46,8 @@ class MainMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Material(
       child: Column(
+        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           PackageButton(
             text: "Geolocator",
