@@ -29,6 +29,12 @@ android {
     compileSdkVersion 34
     ndkVersion flutter.ndkVersion
 
+    externalNativeBuild {
+        cmake {
+            path "../../src/jni_location/CMakeLists.txt"
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

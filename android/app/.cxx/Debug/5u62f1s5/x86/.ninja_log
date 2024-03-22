@@ -1,0 +1,5 @@
+# ninja log v5
+0	24	1711105020	CMakeFiles/jni_location.dir/jni_location.c.o	a1a54cecc747f5a3
+25	35	1711105020	/home/masus/workspace/Flutter-WearOS-Location/build/app/intermediates/cxx/Debug/5u62f1s5/obj/x86/libjni_location.so	a60bd03610e717b5
+0	20	1711105241	CMakeFiles/jni_location.dir/jni_location.c.o	a1a54cecc747f5a3
+20	38	1711105241	/home/masus/workspace/Flutter-WearOS-Location/build/app/intermediates/cxx/Debug/5u62f1s5/obj/x86/libjni_location.so	a60bd03610e717b5

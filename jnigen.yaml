@@ -1,3 +1,12 @@
+#android_sdk_config:
+#  add_gradle_deps: true
+
+#summarizer:
+#  # Instead of Java source code, we want to generate from classes
+#  backend: asm
+
+#suspend_fun_to_async: true
+
 output:
   c:
     library_name: jni_location

@@ -32,8 +32,8 @@ class JNILocation extends jni.JObject {
   late final jni.JObjType<JNILocation> $type = type;
 
   JNILocation.fromRef(
-    jni.JObjectPtr ref,
-  ) : super.fromRef(ref);
+    super.ref,
+  ) : super.fromRef();
 
   /// The type which includes information such as the signature of this class.
   static const type = $JNILocationType();

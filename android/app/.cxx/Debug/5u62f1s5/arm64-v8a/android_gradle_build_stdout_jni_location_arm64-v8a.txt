@@ -1,0 +1,3 @@
+ninja: Entering directory `/home/masus/workspace/Flutter-WearOS-Location/android/app/.cxx/Debug/5u62f1s5/arm64-v8a'
+[1/2] Building C object CMakeFiles/jni_location.dir/jni_location.c.o
+[2/2] Linking C shared library /home/masus/workspace/Flutter-WearOS-Location/build/app/intermediates/cxx/Debug/5u62f1s5/obj/arm64-v8a/libjni_location.so

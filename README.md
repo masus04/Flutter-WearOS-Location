@@ -74,6 +74,56 @@ I/flutter ( 4135): (elided 26 frames from dart:async)
 
 # JNIGen
 
+## Steps to create JNI implementation
+* Add dependencies
+  ```
+  flutter pub add jni dev:jnigen
+  ```
+* Add jnigen.yaml
+  ```
+  android_sdk_config:
+  add_gradle_deps: true
+
+  #summarizer:
+  #  # Instead of Java source code, we want to generate from classes
+  #  backend: asm
+
+  suspend_fun_to_async: true
+
+  output:
+  c:
+  library_name: jni_location
+  path: src/jni_location/
+  dart:
+  path: lib/jni_location.dart
+  structure: single_file
+
+  source_path:
+  - 'java/'
+    classes:
+  - 'ch.masus.jni_location.JNILocation'
+  ```
+* Implement Java code under `/java/{PATH_TO_LIB}`
+* Run jnigen
+  ```
+  dart run jnigen --config jnigen.yaml
+  ```
+* Add the following code under `android/app/build.gradle`:
+   ```
+   android {
+        ...
+        externalNativeBuild {
+          cmake {
+            path "../../src/jni_location/CMakeLists.txt"
+          }
+        ...
+        }
+    }
+   ```
+* 
+
+
 ## Requirements
 1. Install maven (Linux: `sudo apt install maven`)
 2. Generate JNIgen (`dart run jnigen --config jnigen.yaml`)
+3. Generate JNI Bindings (``)

@@ -1,0 +1,7 @@
+Executable : /home/masus/Android/Sdk/cmake/3.18.1/bin/ninja
+arguments : 
+-C
+/home/masus/workspace/Flutter-WearOS-Location/android/app/.cxx/Debug/5u62f1s5/x86_64
+jni_location
+jvmArgs : 
+
