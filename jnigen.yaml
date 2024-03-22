@@ -1,0 +1,12 @@
+output:
+  c:
+    library_name: jni_location
+    path: src/jni_location/
+  dart:
+    path: lib/jni_location.dart
+    structure: single_file
+
+source_path:
+  - 'java/'
+classes:
+  - 'ch.masus.jni_location.JNILocation'

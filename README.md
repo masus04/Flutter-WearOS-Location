@@ -70,3 +70,10 @@ I/flutter ( 4135): #0      GeolocatorAndroid.getPositionStream.<anonymous closur
 I/flutter ( 4135): (elided 26 frames from dart:async)
 
 ```
+
+
+# JNIGen
+
+## Requirements
+1. Install maven (Linux: `sudo apt install maven`)
+2. Generate JNIgen (`dart run jnigen --config jnigen.yaml`)
