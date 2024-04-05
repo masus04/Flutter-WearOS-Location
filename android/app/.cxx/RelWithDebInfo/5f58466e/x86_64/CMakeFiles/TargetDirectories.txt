@@ -1,0 +1,3 @@
+/home/masus/workspace/Flutter-WearOS-Location/android/app/.cxx/RelWithDebInfo/5f58466e/x86_64/CMakeFiles/rebuild_cache.dir
+/home/masus/workspace/Flutter-WearOS-Location/android/app/.cxx/RelWithDebInfo/5f58466e/x86_64/CMakeFiles/edit_cache.dir
+/home/masus/workspace/Flutter-WearOS-Location/android/app/.cxx/RelWithDebInfo/5f58466e/x86_64/CMakeFiles/jni_location.dir

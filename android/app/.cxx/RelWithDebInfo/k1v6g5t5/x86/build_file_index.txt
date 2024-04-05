@@ -1,0 +1,1 @@
+/home/masus/workspace/Flutter-WearOS-Location/src/CMakeLists.txt

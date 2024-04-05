@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "/home/masus/workspace/Flutter-WearOS-Location/src/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/masus/Android/Sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/home/masus/workspace/Flutter-WearOS-Location/android/app/.cxx/Debug/2j2m2v56/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/masus/Android/Sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/home/masus/workspace/Flutter-WearOS-Location/android/app/.cxx/Debug/2j2m2v56/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "jni_location::@6890427a1f51a3e7e1df": {
+      "artifactName": "jni_location",
+      "abi": "x86",
+      "output": "/home/masus/workspace/Flutter-WearOS-Location/build/app/intermediates/cxx/Debug/2j2m2v56/obj/x86/libjni_location.so",
+      "runtimeFiles": []
+    }
+  }
+}

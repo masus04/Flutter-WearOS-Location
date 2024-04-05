@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : "RelWithDebInfo"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -151,7 +151,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/masus/workspace/Flutter-WearOS-Location/android/app/.cxx/Debug/y5o301t6/x86"
+			"value" : "/home/masus/workspace/Flutter-WearOS-Location/android/app/.cxx/RelWithDebInfo/5f58466e/x86"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -619,7 +619,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/home/masus/workspace/Flutter-WearOS-Location/build/app/intermediates/cxx/Debug/y5o301t6/obj/x86"
+			"value" : "/home/masus/workspace/Flutter-WearOS-Location/build/app/intermediates/cxx/RelWithDebInfo/5f58466e/obj/x86"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -951,7 +951,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/home/masus/workspace/Flutter-WearOS-Location/build/app/intermediates/cxx/Debug/y5o301t6/obj/x86"
+			"value" : "/home/masus/workspace/Flutter-WearOS-Location/build/app/intermediates/cxx/RelWithDebInfo/5f58466e/obj/x86"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1235,7 +1235,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/masus/workspace/Flutter-WearOS-Location/android/app/.cxx/Debug/y5o301t6/x86"
+			"value" : "/home/masus/workspace/Flutter-WearOS-Location/android/app/.cxx/RelWithDebInfo/5f58466e/x86"
 		},
 		{
 			"name" : "jni_location_LIB_DEPENDS",

@@ -1,0 +1,1 @@
+/home/masus/workspace/Flutter-WearOS-Location/build/app/intermediates/cxx/Debug/2j2m2v56/obj/x86

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/masus/workspace/Flutter-WearOS-Location/android/app/.cxx/RelWithDebInfo/5f58466e/x86",
+  "command": "/home/masus/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android30 --gcc-toolchain=/home/masus/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/masus/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DDART_SHARED_LIB -Djni_location_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -g -DNDEBUG -fPIC -o CMakeFiles/jni_location.dir/jni_location/jni_location.c.o -c /home/masus/workspace/Flutter-WearOS-Location/src/jni_location/jni_location.c",
+  "file": "/home/masus/workspace/Flutter-WearOS-Location/src/jni_location/jni_location.c"
+}
+]
