@@ -1,0 +1,38 @@
+{
+  "buildFiles": [
+    "/home/masus/workspace/Flutter-WearOS-Location/src/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/masus/Android/Sdk/cmake/3.18.1/bin/ninja",
+      "-C",
+      "/home/masus/workspace/Flutter-WearOS-Location/android/app/.cxx/Debug/y5o301t6/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/masus/Android/Sdk/cmake/3.18.1/bin/ninja",
+    "-C",
+    "/home/masus/workspace/Flutter-WearOS-Location/android/app/.cxx/Debug/y5o301t6/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "jni_location::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "jni_location",
+      "output": "/home/masus/workspace/Flutter-WearOS-Location/build/app/intermediates/cxx/Debug/y5o301t6/obj/arm64-v8a/libjni_location.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/home/masus/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/home/masus/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

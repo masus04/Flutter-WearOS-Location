@@ -1,12 +1,14 @@
 import "package:flutter/material.dart";
-import "package:flutter_wearos_location/geolocator_widget.dart";
-import "package:flutter_wearos_location/location_widget.dart";
+import "package:flutter_wearos_location/views/geolocator_widget.dart";
+import "package:flutter_wearos_location/views/jni_location_widget.dart";
+// import "package:flutter_wearos_location/views/location_widget.dart";
 import "package:hooks_riverpod/hooks_riverpod.dart";
 
 enum Route {
   mainMenu,
   geoLocator,
-  location;
+  location,
+  jniLocation;
 
   String get route => "/$this";
 }
@@ -32,7 +34,8 @@ class MyApp extends StatelessWidget {
         routes: {
           Route.mainMenu.route: (BuildContext context) => const MainMenu(),
           Route.geoLocator.route: (BuildContext context) => const GeolocatorWidget(),
-          Route.location.route: (BuildContext context) => const LocationWidget(),
+          // Route.location.route: (BuildContext context) => const LocationWidget(),
+          Route.jniLocation.route: (BuildContext context) => const JNILocationWidget(),
         },
       ),
     );
@@ -56,6 +59,10 @@ class MainMenu extends StatelessWidget {
           PackageButton(
             text: "Location",
             route: Route.location,
+          ),
+          PackageButton(
+            text: "JNI Location",
+            route: Route.jniLocation,
           ),
         ],
       ),

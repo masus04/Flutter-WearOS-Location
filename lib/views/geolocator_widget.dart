@@ -1,18 +1,18 @@
 import "package:flutter/material.dart";
-import "package:flutter_wearos_location/location_provider.dart";
+import "package:flutter_wearos_location/providers/geolocator_provider.dart";
 import "package:hooks_riverpod/hooks_riverpod.dart";
 
-class LocationWidget extends HookConsumerWidget {
-  const LocationWidget({super.key});
+class GeolocatorWidget extends HookConsumerWidget {
+  const GeolocatorWidget({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final position = ref.watch(locationProvider);
+    final position = ref.watch(geolocatorProvider);
 
     return TextButton(
       onPressed: () {},
       child: position.when(
-        data: (position) => Text("Speed: ${position.speed?.toStringAsFixed(2)} m/s \nHeading: ${position.heading} °"),
+        data: (position) => Text("Speed: ${position.speed.toStringAsFixed(2)} m/s \nHeading: ${position.heading} °"),
         error: (error, stackTrace) {
           // throw error;
 
